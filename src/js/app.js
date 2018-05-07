@@ -21,7 +21,7 @@ App = {
   },
 
   initContracts: function() {
-    $.getJSON('contract.json', function(data) {
+    $.getJSON('Diversify.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract.
       var contractArtifact = data;
       App.contracts[contractArtifact.contractName] = TruffleContract(contractArtifact);
